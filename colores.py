@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # Cargar imagen
-img = cv2.imread("favela.jpg")  # Leer en formato BGR (no RGB)
+img = cv2.imread("reto_1/Reto_3/favela.jpg")  # Leer en formato BGR (no RGB)
 print("Forma de la imagen (alto, ancho, canales):", img.shape)
 
 
@@ -34,8 +34,8 @@ def analizar_roi(roi, nombre, scale_factor=20):
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 # Analizar y mostrar cada ROI
-analizar_roi(roi1, "ROI 1 (Morado)")
-analizar_roi(roi2, "ROI 2 (Azul)")
+analizar_roi(roi1, "ROI 1 (Azul claro)")
+analizar_roi(roi2, "ROI 2 (Amarillo)")
 analizar_roi(roi3, "ROI 3 (Verde)")
 analizar_roi(roi4, "ROI 4 (Naranja)")
 analizar_roi(roi5, "ROI 5 (Negro)")
